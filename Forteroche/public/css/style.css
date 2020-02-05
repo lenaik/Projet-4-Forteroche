@@ -1,0 +1,676 @@
+/* stylelint-disable selector-list-comma-newline-after */
+
+
+
+/*                             General Rules                     */
+
+html {
+  height: 100%;
+  width: 100%;
+}
+body {
+  width: 100vw;
+  height: 100%;
+  top: 0;
+  margin: auto;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+  color: #4a4c52;
+}
+.template-big {
+  width: 100%;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.template-middle {
+  width: 90%;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.template-short {
+  width: 60%;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.title-page {
+  width: 80%;
+  margin: 30px auto;
+  font-size: 1rem;
+}
+.subtitle-page {
+  width: 80%;
+  margin: 30px auto 40px;
+  font-size: 0.8rem;
+}
+.goback {
+  width: fit-content;
+  font-size: 1rem;
+  color: #4a4c52;
+  align-items: center;
+  position: relative;
+  top: -10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.goback-text {
+  margin-left: 10px;
+}
+.backend-form {
+  display: flex;
+  flex-direction: column;
+  text-align: -webkit-center;
+}
+.form-field-title {
+  position: relative;
+  margin: 6px auto;
+}
+ul {
+  padding: 0;
+}
+
+@media all and (min-width: 570px) { 
+  .title-page {
+    font-size: 2rem;
+  }
+  .subtitle-page {
+    font-size: 1.2rem;
+  }
+  .goback {
+    font-size: 1.5rem;
+    left: -60px;
+  }
+  .form-field-title {
+    margin: 32px auto;
+  }
+  .template-middle {
+    width: 80%;
+  }
+}
+@media all and (min-height: 1100px) {
+  .template-big {
+    height: 100%;
+  }
+}
+
+
+
+/*                             Header                    */
+
+.header {
+  width: 100%;
+  height: 55vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url(../images/black-valley.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header-backend {
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url(../images/black-valley.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header-chapter {
+  width: 100%;
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url("../images/black-valley.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.header-top {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 30px auto;
+  padding-bottom: 25px;
+  border-bottom: 3px solid gainsboro;
+}
+.header-top-chapter {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 100px auto;
+  padding-bottom: 25px;
+  border-bottom: 3px solid #e5e5e5;
+}
+.item-top {
+ color: whitesmoke;
+}
+.logo {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid black;
+  border-radius: 50%;
+}
+.login {
+  border: 1px solid whitesmoke;
+  color: white;
+  background-color: transparent;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  padding: 5px 10px 5px 10px;
+}
+.header-bottom {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  width: 80%;
+  margin: 25px auto;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+.sub-title {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+  font-size: 1rem;
+  text-align: center;
+  color: black;
+}
+.title {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+  font-size: 1rem;
+  text-align: center;
+  color: black;
+}
+.item-bottom {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  text-align: center;
+  color: white;
+}
+
+@media all and (min-width: 570px) {
+  .logo {
+    width: 80px;
+    height: 80px;
+    border: 5px solid white;
+  }
+  .item-bottom {
+    font-size: 1.5rem;
+    margin-bottom: 0px;
+  }
+  .login {
+    border: 3px solid whitesmoke;
+    width: 160px;
+    height: 60px;
+    font-size: 1.2rem;
+    padding: 5px 10px 5px 10px;
+  }
+  .title {
+    font-size: 2.2rem;
+  }
+  .sub-title {
+    font-size: 1.8rem;
+    color: white;
+  }
+  .header {
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url("../images/black-valley.jpg");
+    background-repeat: no-repeat;
+  }
+  .header-backend {
+    height: 65vh;
+  }
+  
+  nav {
+    flex-direction: row;
+  }
+  .header-top {
+    flex-direction: row;
+    margin: 100px auto;
+    border-bottom: 3px solid #e5e5e5;
+  }
+  .header-bottom {
+    overflow-y: hidden;
+
+  }
+  .header-chapter {
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 770px) {
+  .header-top-chapter {
+    border-bottom: none;
+  }
+}
+@media all and (min-width: 760px) {
+  @media all and (min-height: 950px) { 
+    .login {
+      border: 3px solid black;
+      color: black;
+    }
+  }
+}
+
+
+
+/*                             Template Back & Front                   */
+
+.wrapper {
+  text-align: center;
+}
+
+
+
+/*                             Home Page                    */
+.template-home {
+  width: 90%;
+  display: flex;
+  margin: auto;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+}
+.quote-slider {
+  margin: 2px;
+  list-style: none;
+  display: block;
+  position: relative;
+  overflow-x: hidden;
+}
+.quote-slider li {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -60%;
+  width: 60%;
+  font-family: 'Crimson Text', serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: red;
+  text-shadow: 2px 2px 0px rgba(0,0,0,0.3);
+  font-style: italic;
+  text-align: center;
+  z-index: 5;
+}
+.site {
+  font-family: 'Oswald', sans-serif;
+  font-style: normal;
+  margin-top: 40px;
+  font-size: 1rem;
+  text-shadow: none;
+  color: black;
+}
+.content-general {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.content-home-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: auto;
+}
+.content-home-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px auto;
+}
+.jean {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../images/Jean.jpg");
+}
+.jean-abstract {
+  width: 90%;
+  text-align: center;
+} 
+.content-redirect {
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  min-height: 3vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, #e7e7e7, #838486);
+}
+
+@media all and (min-width: 460px) {
+  .content-general {
+    flex-direction: row;
+  }
+  .template-home {
+    flex-direction: column;
+  }
+  .quote-slider {
+    min-height: 15vh;
+    margin: 20px;
+  }
+  .content-home-left {
+    width: 45%;
+  }
+  .content-home-right {
+    width: 35%;
+  }
+}
+
+
+
+/*                             Chapters Page                    */
+
+.list-chapter {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+.content-chapters-left {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: 100%;
+}
+.content-chapters-right {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+.wrapper-chapters {
+  display: flex;
+  width: 100%;
+} 
+.chapters {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  height: 100px;
+  font-size: 1rem;
+}
+.chapter:nth-child(odd) {
+  background-color: #4a4c52;
+  color: white;
+}
+.chapter:nth-child(even) {
+  background-color: #dbdfe7;
+  color: black;
+}
+.resume {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: space-evenly;
+}
+.text-resume {
+  padding: 0px 15px 0px 15px;
+  font-size: 0.8rem;
+  display: flex;
+  height: 90%;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+@media all and (min-width: 460px) {
+  .chapters {
+    font-size: 1.5rem;
+  }
+  .text-resume {
+    font-size: 1rem;
+    padding: 0px 50px 0px 50px;
+  }
+}
+
+
+
+/*                             Chapter Read Page                    */
+
+.comment:nth-child(even) {
+  background-color: #4a4c52;
+  color: white;
+  padding-bottom: 15px;
+}
+.comment:nth-child(odd) {
+  background-color: #dbdfe7;
+  color: black;
+  padding-bottom: 15px;
+}
+
+
+
+/*                             Contact                    */
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+.contact-form-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.form-field {
+  position: relative;
+  margin: 32px 0;
+}
+.contact-form-content {
+  display: flex;
+  flex-direction: column;
+}
+.sized-comment {
+  width: 40%;
+  margin: auto;
+}
+.input-text {
+  display: block;
+  width: 100%;
+  border-width: 0 0 2px 0;
+  border-color: #000;
+  font-family: Lusitana, serif;
+  margin-top: 5px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  outline-style: none;
+  text-align: center;
+}
+.label {
+  position: absolute;
+  left: 20px;
+  bottom: 11px;
+  font-family: Lusitana, serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #888;
+  cursor: text;
+  transition: transform .2s ease-in-out;
+}
+.submit-btn {
+  display: inline-block;
+  background-color: #000;
+  color: #fff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 3px solid black;
+  border-radius: 30px;
+  font-family: Raleway, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+}
+
+@media all and (min-width: 460px) {
+  .contact-form-top {
+    flex-direction: row;
+  }
+}
+
+
+
+/*                             Login Page                  */
+
+.login-page {
+  width: 60%;
+  margin:auto;
+}
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+.login-form-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+
+/*                             Dashboard                    */
+
+.feature {
+  display: flex;
+  font-size: 0.8rem;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  border-radius: 10px;
+  margin: 5px auto;
+}
+.feature:nth-child(even) {
+  background-color: #4a4c52;
+  color: white;
+}
+.feature:nth-child(odd) {
+  background-color: #dbdfe7;
+  color: black;
+}
+.feature-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin: 5px auto;
+}
+.feature-column:nth-child(even) {
+  background-color: #4a4c52;
+  color: white;
+}
+.feature-column:nth-child(odd) {
+  background-color: #dbdfe7;
+  color: black;
+}
+.two-choose {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 20px auto 60px;
+}
+
+@media all and (min-width: 460px) {
+  .two-choose {
+    flex-direction: row;
+    width: 50%;
+  }
+  .feature {
+    font-size: 1rem;
+  }
+}
+
+
+
+/*                             Inbox Dashboard                  */
+
+.message-inbox-top {
+  display: flex;
+  flex-direction: column;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 20px;
+  justify-content : space-between;
+  background-color: #dbdfe7;
+  color: black;
+}
+
+.message-inbox-middle {
+  display: flex;
+  flex-direction: column;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 20px;
+  justify-content : space-between;
+  background-color: #4a4c52;
+  color: white;
+}
+.message-inbox-bottom {
+  display: flex;
+  flex-direction: column;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 20px;
+  justify-content : space-between;
+  background-color: #dbdfe7;
+  color: black;
+}
+
+@media all and (min-width:600px) {
+  .message-inbox-top {
+    flex-direction: row;
+  }
+}
+
+
+
+/*                             Delete Chapters                  */
+
+.delete-button {
+  margin-left: 30px;
+}
